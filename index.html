@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Assignment2ByMMDou</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-----------------------Left Input Card------------------------->
+  <section class="bgMask" id="leftCard">
+
+    <div class="card">
+
+      <div class="purplePart">
+        <div class="plaintiod"></div>
+        <div class="moon"></div>
+        <h1 class="bigHeading">Tax-o-tron</h1>
+        <h4 class="subHeading">The free and simple online tax calculator.</h4>
+      </div>
+      <div class="whiteFormPart">
+
+        <h2 class="formHeading">Calculate your tax</h2>
+        <div class="infoBox">
+          <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M9.45801 7.37492H11.5413V5.29159H9.45801V7.37492ZM10.4997 18.8333C5.90593 18.8333 2.16634 15.0937 2.16634 10.4999C2.16634 5.90617 5.90593 2.16659 10.4997 2.16659C15.0934 2.16659 18.833 5.90617 18.833 10.4999C18.833 15.0937 15.0934 18.8333 10.4997 18.8333ZM10.4997 0.083252C9.13174 0.083252 7.7772 0.352687 6.51339 0.876174C5.24958 1.39966 4.10126 2.16695 3.13398 3.13422C1.18047 5.08773 0.0830078 7.73725 0.0830078 10.4999C0.0830078 13.2626 1.18047 15.9121 3.13398 17.8656C4.10126 18.8329 5.24958 19.6002 6.51339 20.1237C7.7772 20.6472 9.13174 20.9166 10.4997 20.9166C13.2623 20.9166 15.9119 19.8191 17.8654 17.8656C19.8189 15.9121 20.9163 13.2626 20.9163 10.4999C20.9163 9.13198 20.6469 7.77744 20.1234 6.51363C19.5999 5.24982 18.8326 4.1015 17.8654 3.13422C16.8981 2.16695 15.7498 1.39966 14.486 0.876174C13.2222 0.352687 11.8676 0.083252 10.4997 0.083252ZM9.45801 15.7083H11.5413V9.45825H9.45801V15.7083Z"
+              fill="#8477C9" />
+          </svg>
+          <span class="infoText"> Fields marked with * are mandatory</span>
+        </div>
+
+        <!-- Country of Resident Select Area -->
+        <div class="formColumn">
+          <label class="formBoxLable" for="countryName">Select your country of residence *</label>
+          <select class="formBox" name="" id="countryName">
+            <option value="Australia">Australia</option>
+          </select>
+          <svg class="dropDownArrow" width="11" height="6" viewBox="0 0 11 6" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M5.27441 6L0.0782618 9.98375e-07L10.4706 7.16801e-08L5.27441 6Z" fill="#585757" />
+          </svg>
+        </div>
+
+        <!-- Income Year Select Area-->
+        <div class="formColumn">
+          <label class="formBoxLable" for="incomeYear">Select an income year *</label>
+          <select class="formBox" name="" id="incomeYear">
+            <option value="2020 - 2021">2020 - 2021</option>
+          </select>
+
+          <svg class="dropDownArrow" width="11" height="6" viewBox="0 0 11 6" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M5.27441 6L0.0782618 9.98375e-07L10.4706 7.16801e-08L5.27441 6Z" fill="#585757" />
+          </svg>
+        </div>
+
+        <!-- Texable Income Input Area -->
+        <div class="formColumn">
+          <label class="formBoxLable" for="income">Enter your total taxable income for the income year *</label>
+          <input class="formBox" type="text" id="income" placeholder="     Amount">
+          <span class="dollarSign">$</span>
+          <span class="moneyEnd">.00</span>
+        </div>
+
+        <!-- Calculate Button -->
+        <a class="calculateButton" href="#rightCard">Calculator</a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-------------------Right Output/Display Card------------------->
+  <section class="bgMask" id="rightCard">
+    <div class="card">
+      <div class="whiteFormPart">
+        <h2 class="formHeading">Your tax results</h2>
+
+        <!-- Country of Resident Select Area -->
+        <div class="formColumn">
+          <label class="formBoxLable" for="countryName">Select your country of residence *</label>
+          <select class="formBox" name="" id="countryName" disabled>
+            <option value="Australia">Australia</option>
+          </select>
+          <svg class="dropDownArrow" width="11" height="6" viewBox="0 0 11 6" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M5.27441 6L0.0782618 9.98375e-07L10.4706 7.16801e-08L5.27441 6Z" fill="#585757" />
+          </svg>
+        </div>
+
+        <!-- Income Year Select Area-->
+        <div class="formColumn">
+          <label class="formBoxLable" for="incomeYear">Select an income year *</label>
+          <select class="formBox" name="" id="incomeYear">
+            <option value="2020 - 2021">2020 - 2021</option>
+          </select>
+
+          <svg class="dropDownArrow" width="11" height="6" viewBox="0 0 11 6" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M5.27441 6L0.0782618 9.98375e-07L10.4706 7.16801e-08L5.27441 6Z" fill="#585757" />
+          </svg>
+        </div>
+
+        <!-- Texable Income Input Area -->
+        <div class="formColumn">
+          <label class="formBoxLable" for="income">Enter your total taxable income for the income year *</label>
+          <input class="formBox" type="text" id="income" placeholder="     70,000">
+          <span class="dollarSign">$</span>
+          <span class="moneyEnd">.00</span>
+        </div>
+
+        <a class="backward" href="#leftCard">Go back to previous screen</a>
+
+      </div>
+      <div class="purplePart">
+        <div class="plaintiod"></div>
+        <div class="moon"></div>
+
+        <div class="results">
+          <div class="resultsDiv">
+            <h3 class="smallHeading">Your estimated taxable income is:</h3>
+            <div class="displayTotalResult">$13.217.00</div>
+
+          </div>
+
+          <!-- $0 - $18,200 zone -->
+          <div class="resultsDiv">
+            <h3 class="smallHeading">Breakdown</h3>
+            <div class="displayBreakdownResults">
+              <div class="taxBracket">
+                <p class="topBracket">Tax Bracket</s><br>
+                <p class="bottomBracket">$0 - $18,200</p>
+              </div>
+              <p class="breakdownResult">$0</p>
+            </div>
+
+            <!-- $18,201 - $45,000 zone -->
+            <div class="displayBreakdownResults">
+              <div class="taxBracket">
+                <p class="topBracket">Tax Bracket</s><br>
+                <p class="bottomBracket">$18,201 - $45,000</p>
+              </div>
+              <p class="breakdownResult">$5,092</p>
+            </div>
+
+            <!-- $45,001 - $120,000 zone -->
+            <div class="displayBreakdownResults">
+              <div class="taxBracket">
+                <p class="topBracket">Tax Bracket</s><br>
+                <p class="bottomBracket">$45,001 - $120,000</p>
+              </div>
+              <p class="breakdownResult">$8,125</p>
+            </div>
+
+            <!-- $120,001 - $180,000 zone -->
+            <div class="displayBreakdownResults">
+              <div class="taxBracket">
+                <p class="topBracket">Tax Bracket</s><br>
+                <p class="bottomBracket">$120,001 - $180,000</p>
+              </div>
+              <p class="breakdownResult">$0</p>
+            </div>
+
+            <!-- $180,000+ zone -->
+            <div class="displayBreakdownResults">
+              <div class="taxBracket">
+                <p class="topBracket">Tax Bracket</s><br>
+                <p class="bottomBracket">$0 - $18,200</p>
+              </div>
+              <p class="breakdownResult">$0</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+</body>
+
+</html>

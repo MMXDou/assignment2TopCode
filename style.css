@@ -1,0 +1,330 @@
+:root {
+  --color-bgMask: #E7E7FF;
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+  --color-purple: #8477C9;
+  --color-greyBox: #E4E4E4;
+  --color-greyFont: #848484;
+
+}
+
+/* nest fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  color: var(--color-black);
+  /* font-style: normal; */
+}
+
+/* ----------------------Overall Class----------------------- */
+
+body {
+  display: flex;
+}
+
+div {
+  border-radius: 5px;
+}
+
+.bgMask {
+  /* position: relative; no I'm just lying */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 1152px;
+  height: 700px;
+  background: var(--color-bgMask);
+  margin: 67px;
+
+  /* Inside auto layout */
+  flex: none;
+}
+
+.card {
+  /* Auto layout */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 764px;
+  height: 512px;
+
+  padding: 32px;
+  /* gap: 64px; */
+
+  background: var(--color-white);
+  box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.25);
+
+}
+
+.purplePart {
+  position: relative;
+  width: 320px;
+  height: 448px;
+  background: var(--color-purple);
+  box-shadow: 0px 4px 4px #E7E7FF;
+
+  flex: none;
+
+  overflow: hidden;
+}
+
+.whiteFormPart {
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  /* align-items: flex-start; */
+  padding: 16px;
+  gap: 16px;
+  flex: none;
+  width: 332px;
+}
+
+.plaintiod {
+  position: absolute;
+  width: 220px;
+  height: 203.64px;
+  border-radius: 50%;
+  left: -36.08px;
+  bottom: -49.06px;
+  background: linear-gradient(117.38deg, #E7E6FF 10.73%, rgba(231, 230, 255, 0) 84.05%);
+}
+
+.moon {
+  position: absolute;
+  width: 36.08px;
+  height: 35.17px;
+  border-radius: 50%;
+  left: 143.38px;
+  bottom: 82.38px;
+
+  background: #E7E7FF;
+  box-shadow: -10px 13px 3px rgba(0, 0, 0, 0.15);
+}
+
+.formHeading {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 38px;
+
+  color: var(--color-black);
+}
+
+.formColumn {
+  position: relative;
+  width: 300px;
+}
+
+.formBoxLable {
+  font-weight: 500;
+  font-size: 12px;
+  /* height: 14px; */
+  line-height: 14px;
+
+  color: var(--color-black);
+}
+
+.formBox {
+  width: 300px;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 13.73px;
+  margin-top: 8px;
+
+  border: 1px solid #A4A4A4;
+  border-radius: 5px;
+  appearance: none;
+}
+
+.dropDownArrow {
+  position: absolute;
+  right: 13.73px;
+  bottom: 15px;
+}
+
+/* ---------------------Left Input Card Specific----------------------- */
+
+
+.bigHeading {
+  position: absolute;
+  height: 58px;
+  left: 46px;
+  top: 128px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+  color: var(--color-white);
+}
+
+.subHeading {
+  position: absolute;
+  height: 38px;
+  left: 46px;
+  top: 188px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: var(--color-white);
+}
+
+.infoBox {
+  display: flex;
+  align-items: center;
+  width: 300px;
+  height: 39px;
+  border: 2px solid #8477C9;
+  box-shadow: 0px 4px 8px #E7E7FF;
+  padding-left: 12.08px;
+
+}
+
+.infoText {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+
+  color: var(--color-purple);
+  padding-left: 10.77px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.dollarSign {
+  position: absolute;
+  left: 13.73px;
+  bottom: 11px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.moneyEnd {
+  position: absolute;
+  right: 13.73px;
+  bottom: 11px;
+}
+
+.calculateButton {
+  width: 300px;
+  line-height: 43px;
+
+  background: var(--color-purple);
+  box-shadow: 0px 4px 8px #E7E7FF;
+  border-radius: 5px;
+
+  font-weight: 600;
+  font-size: 16px;
+
+  color: var(--color-white);
+  text-align: center;
+  text-decoration: none;
+}
+
+/* -----------------Right Output/Display Card----------------- */
+
+#rightCard .formBox {
+  background: var(--color-greyBox);
+  color: var(--color-greyFont);
+}
+
+#rightCard .dollarSign,
+.moneyEnd {
+  color: var(--color-greyFont);
+}
+
+.backward {
+  color: var(--color-purple);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+
+.results {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  height: 448px;
+  margin-top: 6px;
+  gap: 8px;
+  /* padding: 20px; */
+  align-items: center;
+  justify-content: space-evenly;
+
+}
+
+
+.smallHeading {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 8px;
+  /* padding-top: 10px; */
+  /* padding-bottom: 16; */
+
+  color: var(--color-white);
+}
+
+
+.displayTotalResult {
+  width: 280px;
+  height: 70px;
+  background: var(--color-white);
+  border-radius: 5px;
+
+
+  text-align: center;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 70px;
+
+  color: var(--color-purple);
+}
+
+
+.displayBreakdownResults {
+  position: relative;
+  width: 278px;
+  height: 48px;
+  background: var(--color-white);
+  border-radius: 3px;
+  margin-bottom: 8px;
+}
+
+.taxBracket {
+  padding: 10px 14px;
+}
+
+.topBracket {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.bottomBracket {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.breakdownResult {
+  position: absolute;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  top: 12px;
+  right: 15px;
+
+  color: var(--color-purple);
+}
